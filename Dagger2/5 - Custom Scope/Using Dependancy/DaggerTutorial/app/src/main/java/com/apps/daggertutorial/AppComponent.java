@@ -1,0 +1,13 @@
+package com.apps.daggertutorial;
+
+import javax.inject.Singleton;
+
+import dagger.Component;
+
+@Singleton
+@Component(modules = RiverModule.class)
+public interface AppComponent {
+
+    River getRiver();
+
+}
